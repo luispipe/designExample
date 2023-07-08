@@ -7,18 +7,22 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity"
-    android:background="@drawable/arbol"
+    android:background="@drawable/blue"
     >
-
+    <ImageView
+        android:paddingTop="35dp"
+        android:id="@+id/ivarbol"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/wind"/>
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:paddingTop="100dp"
         android:paddingBottom="50dp"
         android:text="@string/app_name"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold" />
 
@@ -26,7 +30,7 @@
         android:id="@+id/btLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#13584D"
+        android:backgroundTint="#223D58"
         android:text="Login"
         android:textSize="50sp"
         />
@@ -38,7 +42,7 @@
         android:paddingTop="25dp"
         android:paddingBottom="25dp"
         android:text="¿Se te Olvido la Contraseña?"
-        android:textColor="#FFFFFF"
+        android:textColor="#313938"
         android:textSize="25sp"
         android:textStyle="bold" />
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -54,7 +58,7 @@
             android:paddingRight="15dp"
             android:text="¿No tienes una cuenta?"
             android:textStyle="bold"
-            android:textColor="#929AE3"
+            android:textColor="#5F67B8"
             android:textSize="25sp" />
         <TextView
             android:id="@+id/tvRegister2"
@@ -67,6 +71,44 @@
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#AFE2F9"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibHome"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4E9BBF"
+            android:src="@drawable/home_fill0_wght0_grad0_opsznan" />
+
+        <ImageButton
+            android:id="@+id/ibSearch"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4E9BBF"
+            android:src="@drawable/search_fill0_wght0_grad0_opsznan" />
+
+        <ImageButton
+            android:id="@+id/ibFavorite"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4E9BBF"
+            android:src="@drawable/favorite_fill0_wght0_grad0_opsznan" />
+
+        <ImageButton
+            android:id="@+id/ibSettigns"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4E9BBF"
+            android:src="@drawable/settings_fill0_wght0_grad0_opsznan" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
